@@ -15,3 +15,32 @@
 
     # Введите номер месяца: 15
     # Такого месяца нет!
+
+user_input = input("Введите, пожалуйста, номер месяца:")
+month = int(user_input)
+if user_input == '1':
+    print('Вы ввели январь. 31 день')
+elif user_input == '2':
+    print('Вы ввели февраль. 28 дней')
+elif user_input == '3':
+    print('Вы ввели март. 31 день')
+elif user_input == '4':
+    print('Вы ввели апрель. 30 дней')
+elif user_input == '5':
+    print('Вы ввели май. 31 день')
+elif user_input == '6':
+    print('Вы ввели июнь. 30 дней')
+elif user_input == '7':
+    print('Вы ввели июль. 31 день')
+elif user_input == '8':
+    print('Вы ввели август. 31 день')
+elif user_input == '9':
+    print('Вы ввели сентябрь. 30 дней')
+elif user_input == '10':
+    print('Вы ввели октябрь. 31 день')
+elif user_input == '11':
+    print('Вы ввели ноябрь. 30 дней')
+elif user_input == '12':
+    print('Вы ввели декабрь. 31 день')
+else:
+    print('Такого месяца нет!')

@@ -30,3 +30,11 @@ store = {
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
 
+for name_titles in titles:
+    code_titles = titles[name_titles]
+    total_price = 0
+    total_quantity = 0
+    for quantity_price in store[code_titles]:
+        total_price = total_price + quantity_price['quantity'] * quantity_price['price']
+        total_quantity += quantity_price['quantity']
+    print(name_titles, '-', total_quantity, 'шт, общей стоимостью', total_price, 'рублей.')

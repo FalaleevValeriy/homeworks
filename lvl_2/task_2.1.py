@@ -10,6 +10,26 @@
 # * [5]                             -> min = 5, max = 5
 # функции sorted, max и min использовать нельзя!
 
+
+x = [4,6,2,1,9,63,-134,566]
+def large(arr): 
+    max_ = arr[0]
+    for ele in arr:
+        if ele > max_:
+           max_ = ele
+    return max_ 
+
+
+list1 = [1,4,5,2,6]
+result = large(list1)
+print(result)  # вернется 6
+
+
+
+
+
+
+
 def minimum(arr):
     pass
 
